@@ -15,7 +15,11 @@ def unique(list):
     >>> unique([])
     []
     """
-    pass   # remove this and write the actual code
+    new_list = []
+    for element in list :
+        if element not in new_list:
+            new_list.append(element)
+    return new_list
 
 if __name__ == "__main__":
     """Run the doctests in all methods."""
