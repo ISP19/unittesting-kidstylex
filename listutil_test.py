@@ -52,15 +52,10 @@ class ListUtilTest(unittest.TestCase):
     def test_type_error(self):
         with self.assertRaises(TypeError):
             unique('HI WORLD')
-        with self.assertRaises(TypeError):
             unique('O')
-        with self.assertRaises(TypeError):
             unique(98)
-        with self.assertRaises(TypeError):
             unique(3.22)
-        with self.assertRaises(TypeError):
             unique()
-        with self.assertRaises(TypeError):
             unique(unique())
 
     def test_empty_list(self):

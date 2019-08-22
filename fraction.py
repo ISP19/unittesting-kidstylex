@@ -14,19 +14,26 @@ class Fraction:
            and denominator (default 1).
         """
 
+        self.gcd = math.gcd(numerator, denominator)
+        self.numerator = int(numerator / self.gcd)
+        self.denominator = int(denominator / self.gcd)
+
         if not isinstance(numerator, int):
             raise TypeError("Numerator must be int.")
 
         if not isinstance(denominator, int):
             raise TypeError("Denominator must be int.")
 
-        self.gcd = math.gcd(numerator, denominator)
-        self.numerator = int(numerator / self.gcd)
-        self.denominator = int(denominator / self.gcd)
-
-        if self.denominator < 0:
+        if denominator == 0:
+            if self.numerator > 0:
+                self.numerator = 1
+                self.denominator = 0
+            self.numerator = -1
+            self.denominator = 0
+        elif denominator < 0:
             self.numerator *= -1
             self.denominator *= -1
+
 
     def __add__(self, frac):
         """Return the sum of two fractions as a new fraction.
@@ -44,8 +51,15 @@ class Fraction:
             return "{}".format(self.numerator)
         return "{}/{}".format(self.numerator, self.denominator)
 
-    # def __sub__(self, frac):
+    def __sub__(self, frac):
+        """From formula a/b - c/d = (ad-bc)/(b*d)
+        """
+        new_num = (self.numerator * frac.denominator) - (self.denominator * frac.numerator)
+        new_deno = self.denominator * frac.denominator
+        return Fraction(new_num, new_deno)
+
     # def __gt__(self, frac):
+    #
     # def __neg__(self):
 
     def __eq__(self, frac):
