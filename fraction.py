@@ -58,10 +58,6 @@ class Fraction:
         new_deno = self.denominator * frac.denominator
         return Fraction(new_num, new_deno)
 
-    # def __gt__(self, frac):
-    #
-    # def __neg__(self):
-
     def __eq__(self, frac):
         """Two fractions are equal if they have the same value.
            Fractions are stored in proper form so the internal representation
