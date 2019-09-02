@@ -1,6 +1,6 @@
 ## Unit Testing Assignment
 
-by Arisa and Bill
+by Arisa Pangpeng
 
 
 ## Test Cases for unique
