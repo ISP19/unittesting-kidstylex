@@ -1,4 +1,4 @@
-## Unit Testing Assignment
+## Unit Testing Assignment [![Build Status](https://travis-ci.com/kidstylex/unittesting-kidstylex.svg?branch=master)](https://travis-ci.com/kidstylex/unittesting-kidstylex)
 
 by Arisa Pangpeng
 
