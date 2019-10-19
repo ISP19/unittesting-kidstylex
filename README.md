@@ -1,4 +1,5 @@
-## Unit Testing Assignment [![Build Status](https://travis-ci.com/kidstylex/unittesting-kidstylex.svg?branch=master)](https://travis-ci.com/kidstylex/unittesting-kidstylex)
+## Unit Testing Assignment 
+[![Build Status](https://travis-ci.com/kidstylex/unittesting-kidstylex.svg?branch=master)](https://travis-ci.com/kidstylex/unittesting-kidstylex) [![codecov](https://codecov.io/gh/kidstylex/unittesting-kidstylex/branch/master/graph/badge.svg)](https://codecov.io/gh/kidstylex/unittesting-kidstylex)
 
 by Arisa Pangpeng
 
