@@ -106,5 +106,8 @@ class FractionTest(unittest.TestCase):
         self.assertFalse(f == h)
         self.assertFalse(f.__eq__(h))
 
+if __name__ == '__main__':
+     unittest.main(verbosity=2)
+
 
 
